@@ -41,6 +41,8 @@ $ ./client -p <puerto> -f <archivo> [-e]
 ```
 donde `-e` corresponde a un parámetro opcional y especifica que el archivo se enviará encriptado. 
 
+> Se espera que el cliente y el servidor se ejecuten en directorios distintos para evitar conflictos con los archivos generados.
+
 La generación de clave es automática y única para cada solicitud de envío de archivo y almacenada en el mismo directorio de ejecución del cliente, siguiendo el formato `<archivo>.key`. Es necesario compartir esta clave con el servidor para que este pueda desencriptar el archivo.
 
 Es posible realizar la desencriptación de un archivo encriptado con el siguiente comando:
